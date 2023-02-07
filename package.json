@@ -1,11 +1,11 @@
 {
   "name": "smartbrain-api",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "type": "module"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
