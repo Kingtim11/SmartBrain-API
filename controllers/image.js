@@ -3,7 +3,6 @@ const USER_ID = 'ityojvw8axin';
 const APP_ID = 'eb407230b0164b2aaa22e9996628d533';
 const MODEL_ID = 'face-detection';
 const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';
-import fetch from "node-fetch";
 
 const handlePatCall = (req, res) => {
       const raw = JSON.stringify({ 
