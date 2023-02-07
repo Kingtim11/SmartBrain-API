@@ -7,7 +7,7 @@ const knex = require('knex');
 const register = require('./controllers/register');
 const signIn = require('./controllers/signIn');
 const profile = require('./controllers/profile');
-const image = require('./controllers/image.mjs');
+const image = require('./controllers/image.js');
 
 //Connection details to Render database with knex.
 const db = knex({
