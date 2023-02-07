@@ -13,6 +13,7 @@ const db = knex({
     client: 'pg',
     connection: {
       host : 'dpg-cfh3rs1gp3jqehpkhqlg-a.frankfurt-postgres.render.com',
+      ss1: true,
       user : 'smartbrain_database_xbcx_user',
       password : 'YHRzfBZVEhbNzPmy2xxCx22PhRaO0LWT',
       database : 'smartbrain_database_xbcx'
