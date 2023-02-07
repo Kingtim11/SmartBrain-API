@@ -2,10 +2,10 @@
   "name": "smartbrain-api",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "type": "module"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "knex": "^2.4.2",
-    "node-fetch": "^3.3.0",
+    "node-fetch": "^3.3.0" ,
     "pg": "^8.9.0"
   },
   "devDependencies": {
