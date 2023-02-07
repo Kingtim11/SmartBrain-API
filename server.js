@@ -10,7 +10,7 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 //Connection details to Render database.
-/*const db = knex({
+const db = knex({
     client: 'pg',
     connection: {
       host : 'dpg-cfh3rs1gp3jqehpkhqlg-a',
@@ -20,19 +20,7 @@ const image = require('./controllers/image');
       PORT: '5432',
       ss1: true
     }
-  });*/
-
-//Connection details to local database.
-const db = knex({
-  client: 'pg',
-  connection: {
-    host : '127.0.0.1',
-    user : 'Tim',
-    password : '',
-    database : 'smart-brain'
-  }
-});
-
+  });
 
 const app = express();
 
