@@ -12,10 +12,10 @@ const image = require('./controllers/image');
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgres://db_k96m_user:V6RVh1slju0UIgKCRcMJKVXXrziVHmfZ@dpg-cfh3h8hgp3jqehpj23q0-a/db_k96m',
-      user : 'db_k96m_user',
-      password : 'V6RVh1slju0UIgKCRcMJKVXXrziVHmfZ',
-      database : 'db_k96m'
+      host : 'dpg-cfh3rs1gp3jqehpkhqlg-a.frankfurt-postgres.render.com',
+      user : 'smartbrain_database_xbcx_user',
+      password : 'YHRzfBZVEhbNzPmy2xxCx22PhRaO0LWT',
+      database : 'smartbrain_database_xbcx'
     }
   });
 
