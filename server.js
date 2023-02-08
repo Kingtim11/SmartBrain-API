@@ -26,7 +26,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://smartbrain-app.onrender.com'
+  origin: '*'
 }));
 
  app.get('/', (req,res) => { res.send(`It's working!`) })
