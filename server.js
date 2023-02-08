@@ -17,7 +17,7 @@ const db = knex({
       user : 'smartbrain_database_xbcx_user',
       password : 'YHRzfBZVEhbNzPmy2xxCx22PhRaO0LWT',
       database : 'smartbrain_database_xbcx',
-      //PORT: '5432',
+      PORT: '5432',
       ss1: true
     }
   });
@@ -25,7 +25,9 @@ const db = knex({
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 
  app.get('/', (req,res) => { res.send(`It's working!`) })
  app.post('/signin', signIn.handleSignIn(db, bcrypt) )
