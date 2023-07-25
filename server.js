@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
@@ -13,11 +14,10 @@ const image = require('./controllers/image.js');
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'dpg-cfh3rs1gp3jqehpkhqlg-a',
-      user : 'smartbrain_database_xbcx_user',
-      password : 'YHRzfBZVEhbNzPmy2xxCx22PhRaO0LWT',
-      database : 'smartbrain_database_xbcx',
-      PORT: '5432',
+      host : process.env.HOST,
+      user : process.env.USER,
+      password : process.env.PASSWORD,
+      database : process.env.DB,
       ss1: true
     }
   });
@@ -34,6 +34,6 @@ app.use(cors());
  app.put('/image', image.handleImage(db))
  app.post('/imageUrl', (req, res) =>  { image.handlePatCall(req, res) })
  
- app.listen(process.env.PORT || 3000, () => {
+ app.listen(process.env.PORT || 8080, () => {
     console.log(`App is running on port ${process.env.PORT}`)
  })
