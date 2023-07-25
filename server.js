@@ -18,7 +18,7 @@ const db = knex({
       user : process.env.USER,
       password : process.env.PASSWORD,
       database : process.env.DB,
-      PORT: process.env.PORT,
+      port: process.env.PORT,
       ss1: true
     }
   });
